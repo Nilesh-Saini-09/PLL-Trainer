@@ -6,6 +6,7 @@ var displayTime = document.querySelector("#displayTime");
 var generateScram = document.querySelector("#newScram");
 var algName = document.querySelector('#algName');
 var scramDisplay = document.querySelector("#scramDisplay");
+var generateScram = document.querySelector('#generateScramble');
 
 
 var running = false;
@@ -85,8 +86,29 @@ function run() {
 
 //.............Run function ends here......................
 
-// timer will work when the key goes up
-window.onkeyup = run;
+// Snackbar function
+function snackbar() {
+    // Get the snackbar DIV
+    var snackbar = document.getElementById("snackbar");
+  
+    // Add the "show" class to DIV
+    snackbar.className = "show";
+  
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){
+      snackbar.className = snackbar.className.replace("show", "");
+    }, 3000);
+  }
+
+// timer will work when the spacebar key goes up
+// window.onkeyup = run;
+window.addEventListener('keyup', (e) => {
+    if(e.keyCode === 32){
+        run();
+    } else {
+        snackbar();
+    }
+})
 
 pll();
 

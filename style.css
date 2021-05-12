@@ -65,3 +65,17 @@ th {
   /* margin-top: 128.5px; */
   font-family: "Archivo Black", sans-serif;
 }
+
+.fas {
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.fas:hover {
+  background-color: #fff;
+  color: #222222;
+  transition: 0.8s;
+  border-radius: 50%;
+  padding: 4px;
+}

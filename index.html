@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLL Trainer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="snackbar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
@@ -44,7 +45,8 @@
                 <tr>
                     <th colspan="2">
                         <div class="scramble">
-                            <h2><span id='algName'></span></h2>
+                            <h2><span id='algName'></span> <i class="fas fa-sync-alt fa-xs" id="generateScramble" title="Change Scramble"></i> </h2>
+                            
                         </div>
                         
                     </th>
@@ -58,7 +60,8 @@
             <tbody>
               <tr>
                  <td>
-                    <div class="alg-image">Pic</div>   
+                    <div class="alg-image">Pic</div>  
+                    <div id="snackbar">Press Spacebar to START/STOP the Timer...</div> 
                 </td>
                     <td>
                       <div id="timer">
