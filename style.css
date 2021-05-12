@@ -1,0 +1,57 @@
+body {
+  background: #333;
+  color: #fff;
+  /* overflow: hidden; */
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  /* opacity: 0.8; */
+}
+
+table {
+  border: 1px solid #333;
+  width: 100%;
+  /* padding-top: 100px; */
+}
+
+.main-timer {
+  padding-top: 90px;
+}
+
+td {
+  width: 25em;
+  height: 25em;
+  border: 1px solid #333;
+}
+
+td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th div {
+  display: flex;
+  justify-content: center;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+th {
+  text-align: center;
+}
+
+.alg-image {
+  display: flex;
+  align-items: center;
+  margin-top: 8em;
+}
+
+#timer {
+  margin-top: 8em;
+}
