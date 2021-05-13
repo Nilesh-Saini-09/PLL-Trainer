@@ -23,12 +23,14 @@ td {
   width: 25em;
   height: 25em;
   border: 1px solid #333;
+  text-align: center;
 }
 
 td div {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: yellow;
 }
 
 th div {
@@ -47,24 +49,38 @@ th {
 }
 
 .alg-image {
-  display: flex;
-  align-items: center;
-  margin-top: 8em;
+  width: 300px;
+  height: 300px;
+  margin-left: 25%;
 }
 
-#timer {
-  margin-top: 8em;
-}
-
-#displayTime {
+/* #timer {
   width: 310px;
   height: 100px;
   font-size: 5em;
   position: absolute;
-  /* margin-left: 40%; */
-  /* margin-top: 128.5px; */
+} */
+
+#displayTime {
+  background-color: red;
+  width: 300px;
+  height: 90px;
+  font-size: 5em;
   font-family: "Archivo Black", sans-serif;
+  padding: 5px;
+  margin-left: 25%;
 }
+
+/* #displayTime {
+  width: 310px;
+  height: 100px;
+  font-size: 5em;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 128.5px;
+  font-family: "Archivo Black", sans-serif;
+  background-color: blue;
+} */
 
 .fas {
   cursor: pointer;

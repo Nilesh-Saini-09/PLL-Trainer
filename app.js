@@ -114,6 +114,3 @@ pll();
 
 generateScram.addEventListener('click', pll);
 
-
-
-
